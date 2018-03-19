@@ -2,7 +2,8 @@ console.log('Hello world');
 
 const Hapi = require('hapi');
 const server = new Hapi.Server();
-server.connection({ port: 3000, host: 'localhost' });
+server.connection({ host: process.env.HOST || 'localhost',
+                  port: process.env.PORT || 8080});
 var rubrica = [{ nome: "nome", cognome: "cognome" },
     { nome: "secondo", cognome: "terzo" }];
 
