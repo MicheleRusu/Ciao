@@ -1,5 +1,3 @@
-use 'strict';
-
 console.log('Hello world');
 
 const Hapi = require('hapi');
